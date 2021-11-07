@@ -16,7 +16,7 @@ import requests
 # создаю регулярное выражение с помощью re.compile
 PAD = re.compile(r'((?:[0-9]{,3}[.]){3}[0-9]{,3}) - - '
                  r'(.[0-9]{,2}/\w+/[0-9]{4}:(?:[0-9]{2}:){2}[0-9}{2} \+[0-9]{4}]) .(\w+) '
-                 r'([/\w+]{0,}) (?:[ \"]*)\" ([0-9]+) ([0-9]+)')
+                 r'([/\w+]{0,}) (?:[^\"]*)\" ([0-9]+) ([0-9]+)')
 url = 'https://github.com/elastic/examples/raw/master/Common%20Data%20Formats/nginx_logs/nginx_logs'
 # извлекаю данные из ресурса по указанной ссылке
 content = requests.get(url).text
