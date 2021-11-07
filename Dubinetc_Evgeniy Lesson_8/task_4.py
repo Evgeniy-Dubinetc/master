@@ -43,7 +43,7 @@ def val_checker(decorator_check_func):
         # возвращаю обёртку
         return wrapped
 
-    # возвращаю обёртку верхнего уравня
+    # возвращаю обёртку верхнего уровня
     return _val_checker
 
 
