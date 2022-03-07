@@ -5,12 +5,9 @@ a = int(input("Введите первое число "))
 b = int(input("Введите второе число "))
 c = int(input("Введите третье число "))
 
-if a > b and a < c:
+if b < a < c or c < a < b:
     print(f'{a} вляется средним')
-elif b  and a != c and b != c:
-    print("Треугольник разносторонний")
-elif a == b == c:
-    print("Треугольник равносторонний")
+elif a < b < c or c < b < a:
+    print(f'{b} вляется средним')
 else:
-    print("Треугольник равнобедренный")
-
+    print(f'{c} вляется средним')
