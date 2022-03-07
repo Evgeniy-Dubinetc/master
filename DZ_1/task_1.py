@@ -5,8 +5,8 @@ number = input('Введите трехзначное число: ')
 summa = 0
 product = 1
 
-for f in number:
-    summa += int(f)
-    product *= int(f)
-print(f"Сумма цифр равна: {summa}")
-print(f"Произведение цифр равно: {product}")
+for i in number:
+    summa += int(i)
+    product *= int(i)
+print(f"Сумма цифр - {summa}")
+print(f"Произведение цифр - {product}")
